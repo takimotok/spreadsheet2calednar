@@ -61,7 +61,7 @@ You can test the scripts by these steps:
 In general, as well as VBA, scripts can pick data from specific cells.  
 In others words, we have to fill out shcedules into the cell accurately.
 
-Alert modal will occurs in case something wrong with sheet or script.
+Alert modal will apper in case something wrong with sheet or script.
 
 
 ## Authors
