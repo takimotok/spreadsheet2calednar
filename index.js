@@ -20,7 +20,7 @@ function createSchedule() {
   // credential 取得
   const GOOGLE_CALENDAR_ID = getCalendarId();
 
-  // sheet から取得したデータは配列なので, 対象列を 0 始まりで指定
+  // sheet からの取得データは配列. index を指定.
   const COL_DATE        = 0;
   const COL_DAY         = 1;
   const COL_START_TIME  = 3;
@@ -28,7 +28,7 @@ function createSchedule() {
   const COL_TITLE       = 8;
   const COL_DESCRIPTION = 9;
 
-  //予定の一覧を取得
+  // get schedule list from shee
   const FIRST_ROW = 6;
   const FIRST_COLUMN = 2;
   let sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
@@ -83,9 +83,6 @@ function createSchedule() {
 
     let title   = value[COL_TITLE];
     let options = {
-      // @todo 休みならセルの色を赤色に
-      // @todo ↑かつ, 終日の予定に
-
       description: value[COL_DESCRIPTION]
     };
     try {
