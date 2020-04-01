@@ -10,7 +10,9 @@ The schedules which written in the google spread sheet will be registered into y
 
 This document show how it works and some notifications to use this script.
 
-The script are written as ES6 styled javascript.
+The script are written as ECMAScript styled javascript.
+
+c.f.) <a href="https://developers.google.com/apps-script/guides/v8-runtime?hl=ja" target="_blank">V8 Runtime Overview | Google Apps Script</a>
 
 
 ## Getting Started
