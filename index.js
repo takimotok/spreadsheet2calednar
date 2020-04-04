@@ -185,7 +185,7 @@ function deleteRegisteredScheduleList () {
   let dt = sheet.getRange('B6').getValue();
   let startTime = new Date(dt);
   let endTime = new Date(startTime.getFullYear(), startTime.getMonth() + 1, 0); // 月末
-
+  endTime.setDate(endTime.getDate() + 1);
   let calendar = CalendarApp.getCalendarById(GOOGLE_CALENDAR_ID);
   let eventList = calendar.getEvents(startTime, endTime);
   eventList.forEach(event => {
