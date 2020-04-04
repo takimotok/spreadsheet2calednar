@@ -180,7 +180,6 @@ function createTitle () {
  */
 function deleteRegisteredScheduleList () {
   const GOOGLE_CALENDAR_ID = getCalendarId();
-  const COL_DATE = 0; // 配列で取得したデータの日付カラム
 
   let sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   let dt = sheet.getRange('B6').getValue();
